@@ -5,3 +5,7 @@
 ## Table of Contents
 
 1. [General Flow](1-general-flow.md)
+
+### Appendix
+
+A. [Constants Reference](a-constants-reference.md)
