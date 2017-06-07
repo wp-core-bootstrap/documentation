@@ -8,6 +8,6 @@
 
 ### Appendix
 
-A. [Constants Reference](a-constants-reference.md)
-B. [Globals Reference](b-globals-reference.md)
-C. [Pluggable Functionality Reference](c-pluggable-functionality-reference.md)
+ * A - [Constants Reference](a-constants-reference.md)
+ * B - [Globals Reference](b-globals-reference.md)
+ * C - [Pluggable Functionality Reference](c-pluggable-functionality-reference.md)
