@@ -1,1 +1,1 @@
-# Globals Reference
+# Appendix B - Globals Reference

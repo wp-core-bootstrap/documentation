@@ -1,4 +1,4 @@
-# Constants Reference
+# Appendix A - Constants Reference
 
 * **`WP_USE_THEMES`**
 
