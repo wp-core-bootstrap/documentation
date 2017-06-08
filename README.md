@@ -5,6 +5,7 @@
 ## Table of Contents
 
 1. [General Flow](1-general-flow.md)
+2. [Front-end Request](2-front-end-request.md)
 
 ### Appendices
 
