@@ -1,0 +1,112 @@
+@startuml
+
+title WordPress Bootstrap
+
+skinparam title {
+  FontColor #263238
+}
+
+skinparam class {
+  BackgroundColor #ECEFF1-#CFD8DC
+  BorderColor #37474F
+  ArrowColor #37474F
+  FontColor #263238
+  FontStyle bold
+  FontSize 11
+  Attribute {
+    FontColor #263238
+  }
+}
+
+skinparam activity {
+  BackgroundColor #ECEFF1-#CFD8DC
+  BorderColor #37474F
+  ArrowColor #37474F
+  StartColor #263238
+  EndColor #263238
+  BarColor #263238
+  FontColor #263238
+  FontStyle plain
+  FontSize 10
+}
+
+skinparam circledCharacter {
+  FontColor #263238
+  FontSize 10
+  FontName Helvetica
+  Radius 7
+}
+
+skinparam package {
+  BackgroundColor #FFFFFF-#ECEFF1
+  BorderColor #37474F
+  FontColor #263238
+}
+
+skinparam note {
+  BackgroundColor #FFECB3-#FFE082
+  BorderColor #FF6F00
+  FontColor #3E2723
+  FontSize 11
+}
+
+start
+
+partition index.php {
+  :define WP_USE_THEMES;
+  :require wp-blog-header.php;
+}
+
+partition wp-blog-header.php {
+  :require wp-load.php;
+}
+
+partition wp-load.php {
+  :define ABSPATH;
+  :error_reporting;
+  if (wp-config.php exists?) then (true)
+    :require wp-config.php;
+  else (false)
+    :define WPINC;
+    :require WPINC/load.php;
+    :wp_fix_server_vars();
+    :require WPINC/functions.php;
+    if (not running in circles?) then (true)
+      :redirect to wp-admin/setup-config.php;
+      end
+    else (false)
+      :wp_check_php_mysql_versions();
+      :wp_load_translations_early();
+      :show "Need more help?" message;
+      end
+    endif
+  endif
+}
+
+partition wp-blog-header.php {
+  :wp();
+  :require WPINC/template-loader.php;
+}
+
+partition WPINC/template-loader.php {
+  if (WP_USE_THEMES?) then (true)
+    :do_action( 'template_redirect' );
+  endif
+  if (HEAD request AND exit_on_http_head?) then (true)
+    end
+  endif
+  if (is_robots()?) then (true)
+    :do_action( 'do_robots' );
+    end
+  elseif (is_feed()?) then (true)
+    :do_feed();
+    end
+  elseif (is_trackback()?) then (true)
+    :include wp-trackback.php;
+    end
+  endif
+}
+
+stop
+
+@enduml
