@@ -91,20 +91,59 @@ partition wp-blog-header.php {
 partition WPINC/template-loader.php {
   if (WP_USE_THEMES?) then (true)
     :do_action( 'template_redirect' );
+  else (false)
   endif
   if (HEAD request AND exit_on_http_head?) then (true)
     end
+  else (false)
   endif
   if (is_robots()?) then (true)
     :do_action( 'do_robots' );
     end
-  elseif (is_feed()?) then (true)
+  (false) elseif (is_feed()?) then (true)
     :do_feed();
     end
-  elseif (is_trackback()?) then (true)
+  (false) elseif (is_trackback()?) then (true)
     :include wp-trackback.php;
     end
+  else (false)
   endif
+
+	if (WP_USE_THEMES?) then (true)
+		if (is_embed()?) then (true)
+		(false) elseif (is_404()?) then (true)
+		(false) elseif (is_search()?) then (true)
+		(false) elseif (is_front_page()?) then (true)
+		(false) elseif (is_home()?) then (true)
+		(false) elseif (is_post_type_archive()?) then (true)
+		(false) elseif (is_tax()?) then (true)
+		(false) elseif (is_attachment()?) then (true)
+			:remove_filter(the_content, prepend_attachment);
+		(false) elseif (is_single()?) then (true)
+		(false) elseif (is_page()?) then (true)
+		(false) elseif (is_singular()?) then (true)
+		(false) elseif (is_category()?) then (true)
+		(false) elseif (is_tag()?) then (true)
+		(false) elseif (is_author()?) then (true)
+		(false) elseif (is_date()?) then (true)
+		(false) elseif (is_archive()?) then (true)
+		else (false)
+			:$template = get_index_template();
+		endif
+		if ($template = apply_filters(template_include, $template)?) then (true)
+			:include $template;
+		(false) elseif (current_user_can( 'switch_themes' )?) then (true)
+			:$theme = wp_get_theme();
+			if ($theme->errors()?) then (true)
+				:wp_die($theme->errors());
+			else (false)
+			endif
+		else (false)
+		endif
+		:return;
+	else (false)
+	endif
+
 }
 
 stop
