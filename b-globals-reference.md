@@ -1,1 +1,59 @@
 # Appendix B - Globals Reference
+
+[PHP global variables](http://php.net/manual/en/language.variables.scope.php#language.variables.scope.global) used throughout WordPress Core.
+
+* **`$blog_id`**
+
+	_Type_: integer
+
+	_Set in_: `wp-settings.php` [:mag:](https://github.com/WordPress/WordPress/search?utf8=%E2%9C%93&q=%22$blog_id%22+filename%3Awp-settings.php)
+
+	_Default value_: `1`
+
+	_Description_: Current site ID.
+
+* **`$required_mysql_version`**
+
+	_Type_: string
+
+	_Set in_: `wp-settings.php` [:mag:](https://github.com/WordPress/WordPress/search?utf8=%E2%9C%93&q=%22$required_mysql_versi%22+filename%3Awp-settings.php)
+
+	_Description_: Holds the required MySQL version.
+
+* **`$required_php_version`**
+
+	_Type_: string
+
+	_Set in_: `wp-settings.php` [:mag:](https://github.com/WordPress/WordPress/search?utf8=%E2%9C%93&q=%22$required_php_version%22+filename%3Awp-settings.php)
+
+	_Description_: Holds the required PHP version.
+
+* **`$tinymce_version`**
+
+	_Type_: string
+
+	_Set in_: `wp-settings.php` [:mag:](https://github.com/WordPress/WordPress/search?utf8=%E2%9C%93&q=%22$tinymce_version%22+filename%3Awp-settings.php)
+
+	_Description_: Holds the TinyMCE version.
+
+* **`$wp_db_version`**
+
+	_Type_: string
+
+	_Set in_: `wp-settings.php` [:mag:](https://github.com/WordPress/WordPress/search?utf8=%E2%9C%93&q=%22$wp_db_version%22+filename%3Awp-settings.php)
+
+	_Description_: Holds the WordPress DB revision, increments when changes are made to the WordPress DB schema.
+
+* **`$wp_local_package`**
+
+	_Type_: string
+
+	_Description_: _Set in_: `wp-settings.php` [:mag:](https://github.com/WordPress/WordPress/search?utf8=%E2%9C%93&q=%22$wp_local_package%22+filename%3Awp-settings.php)
+
+* **`$wp_version`**
+
+	_Type_: string
+
+	_Set in_: `wp-settings.php` [:mag:](https://github.com/WordPress/WordPress/search?utf8=%E2%9C%93&q=%22$wp_version%22+filename%3Awp-settings.php)
+
+	_Description_: The WordPress version string.

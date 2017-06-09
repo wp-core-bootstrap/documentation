@@ -83,6 +83,39 @@ partition wp-load.php {
   endif
 }
 
+partition wp-config.php {
+  :define DB_NAME;
+  :define DB_USER;
+  :define DB_PASSWORD;
+  :define DB_HOST;
+  :define DB_CHARSET;
+  :define DB_COLLATE;
+  :define AUTH_KEY;
+  :define SECURE_AUTH_KEY;
+  :define LOGGED_IN_KEY;
+  :define NONCE_KEY;
+  :define AUTH_SALT;
+  :define SECURE_AUTH_SALT;
+  :define LOGGED_IN_SALT;
+  :define NONCE_SALT;
+  :set $table_prefix;
+  if (! defined ABSPATH) then (true)
+    :define ABSPATH;
+  else (false)
+  endif
+  :require wp-settings.php;
+}
+
+partition wp-settings.php {
+  :define WPINC;
+  :require WPINC/load.php;
+  :require WPINC/default-constants.php;
+  :require WPINC/pluginphp;
+  :require WPINC/version.php;
+}
+
+
+
 partition wp-blog-header.php {
   :wp();
   :require WPINC/template-loader.php;
