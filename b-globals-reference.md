@@ -16,7 +16,7 @@
 
 	_Type_: string
 
-	_Set in_: `wp-settings.php` [:mag:](https://github.com/WordPress/WordPress/search?utf8=%E2%9C%93&q=%22$required_mysql_versi%22+filename%3Awp-settings.php)
+	_Set in_: `wp-settings.php` [:mag:](https://github.com/WordPress/WordPress/search?utf8=%E2%9C%93&q=%22$required_mysql_version%22+filename%3Awp-settings.php)
 
 	_Description_: Holds the required MySQL version.
 
