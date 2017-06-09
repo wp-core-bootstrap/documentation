@@ -10,9 +10,9 @@
 
 	_Description_: Stores the absolute path to the WordPress root folder.
 
-* **`WP_INC`**
+* **`WPINC`**
 
-	_Set in_: `wp-load.php` [:mag:](https://github.com/WordPress/WordPress/search?utf8=%E2%9C%93&q=%22WP_INC%22+filename%3Awp-load.php)
+	_Set in_: `wp-load.php` [:mag:](https://github.com/WordPress/WordPress/search?utf8=%E2%9C%93&q=%22WPINC%22+filename%3Awp-load.php)
 
 	_Default value_: `wp-includes`
 
