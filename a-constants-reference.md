@@ -120,6 +120,6 @@
 
 	_Set in_: `wp-load.php` [:mag:](https://github.com/WordPress/WordPress/search?utf8=%E2%9C%93&q=%22WPINC%22+filename%3Awp-load.php)
 
-	_Default value_: `wp-includes`
+	_Default value_: `'wp-includes'`
 
 	_Description_: Directory name of the folder that contains the includes.
