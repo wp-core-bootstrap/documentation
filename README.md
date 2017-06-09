@@ -17,7 +17,7 @@
 
 Throughout this documentation, there are some recurring symbols that provide additional functionality when clicked.
 
-* :mag:
+* :mag: - Search on GitHub.
 
 	This runs a GitHub search on the `WordPress/WordPress` GitHub repository, often targeting a specific file. This is done to avoid directly linking to line numbers in the Core, as these could easily go stale.
 
