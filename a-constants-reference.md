@@ -17,7 +17,7 @@
 	_Default Value_: `SITECOOKIEPATH . 'wp-admin'`
 
 	_Description_: Admin backend path to store the cookie under.
-
+Fshort_
 * **`AUTH_COOKIE`**
 
 	_Set in_: `default-constants.php` [:mag:](https://github.com/WordPress/WordPress/search?utf8=%E2%9C%93&q=%22AUTH_COOKIE%22+filename%3Adefault-constants.php)
@@ -288,9 +288,9 @@
 
 	_Description_: Salt used on the authentication key for generating an authentication cookie on HTTPS connections.
 
-* **`SHORT_INIT`**
+* **`SHORTINIT`**
 
-	_Set in_: `default-constants.php` [:mag:](https://github.com/WordPress/WordPress/search?utf8=%E2%9C%93&q=%22SHORT_INIT%22+filename%3Adefault-constants.php)
+	_Set in_: `default-constants.php` [:mag:](https://github.com/WordPress/WordPress/search?utf8=%E2%9C%93&q=%22SHORTINIT%22+filename%3Adefault-constants.php)
 
 	_Default Value_: `false`
 
