@@ -17,7 +17,7 @@
 	_Default Value_: `SITECOOKIEPATH . 'wp-admin'`
 
 	_Description_: Admin backend path to store the cookie under.
-Fshort_
+
 * **`AUTH_COOKIE`**
 
 	_Set in_: `default-constants.php` [:mag:](https://github.com/WordPress/WordPress/search?utf8=%E2%9C%93&q=%22AUTH_COOKIE%22+filename%3Adefault-constants.php)
