@@ -1,4 +1,4 @@
-# Appendix B - Globals Reference
+# Appendix B - Globals Reference [![Edit in GitHub](https://img.shields.io/badge/Edit_in_GitHub--gray.svg?style=social)](https://github.com/wp-core-bootstrap/documentation/edit/master/b-globals-reference.md)
 
 [PHP global variables](http://php.net/manual/en/language.variables.scope.php#language.variables.scope.global) used throughout WordPress Core.
 
