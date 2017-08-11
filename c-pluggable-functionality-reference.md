@@ -1,4 +1,4 @@
-# Appendix C - Pluggable Functionality Reference
+# Appendix C - Pluggable Functionality Reference [![Edit in GitHub](https://img.shields.io/badge/Edit_in_GitHub--gray.svg?style=social)](https://github.com/wp-core-bootstrap/documentation/edit/master/c-pluggable-functionality-reference.md)
 
 ## Drop-ins (pluggable files)
 
