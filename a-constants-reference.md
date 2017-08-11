@@ -1,4 +1,4 @@
-# Appendix A - Constants Reference
+# Appendix A - Constants Reference [![Edit in GitHub](https://img.shields.io/badge/Edit_in_GitHub--gray.svg?style=social)](https://github.com/wp-core-bootstrap/documentation/edit/master/a-constants-reference.md)
 
 [PHP Constants](http://php.net/manual/en/language.constants.php) used throughout WordPress Core.
 
