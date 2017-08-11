@@ -1,4 +1,4 @@
-# Bootstrap/Load Documentation
+# Bootstrap/Load Documentation [![Edit in GitHub](https://img.shields.io/badge/Edit_in_GitHub--gray.svg?style=social)](https://github.com/wp-core-bootstrap/documentation/edit/master/README.md)
 
 > Work done in the context of the [Nextgen Bootstrap/Load Feature Project](https://make.wordpress.org/core/2017/02/22/nextgen-bootstrap/).
 
